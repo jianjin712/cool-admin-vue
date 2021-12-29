@@ -1,5 +1,5 @@
-import { useCool } from "/@/core";
-import { deepTree } from "/@/core/utils";
+import { useCool } from "/@/cool";
+import { deepTree } from "/@/cool/utils";
 import { ElMessage, ElMessageBox } from "element-plus";
 import { defineComponent, h, ref } from "vue";
 
@@ -16,7 +16,7 @@ export default defineComponent({
 
 		// 刷新列表
 		async function refresh() {
-			return await service.base.system.dept.list().then(deepTree);
+			return await service.base.sys.department.list().then(deepTree);
 		}
 
 		// 转移
@@ -51,7 +51,7 @@ export default defineComponent({
 							type: "warning"
 						})
 							.then(() => {
-								service.base.system.user
+								service.base.sys.user
 									.move({
 										departmentId: id,
 										userIds: ids
@@ -97,7 +97,8 @@ export default defineComponent({
 										border: "1px solid #eee",
 										borderRadius: "3px",
 										padding: "2px"
-									}}>
+									}}
+								>
 									<el-tree
 										data={ctx.list}
 										props={{
@@ -107,7 +108,8 @@ export default defineComponent({
 										highlight-current
 										onNodeClick={(e: any) => {
 											scope["dept"] = e;
-										}}></el-tree>
+										}}
+									></el-tree>
 								</div>
 							);
 						}
