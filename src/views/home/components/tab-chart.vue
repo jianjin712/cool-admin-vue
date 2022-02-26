@@ -78,9 +78,9 @@ export default defineComponent({
 					type: "bar",
 					data: [],
 					itemStyle: {
-						normal: {
-							color: "#4165d7"
-						}
+						//normal: {
+						color: "#4165d7"
+						//}
 					}
 				},
 				{
@@ -90,9 +90,9 @@ export default defineComponent({
 					barGap: "-100%",
 					data: [],
 					itemStyle: {
-						normal: {
-							color: "#f1f1f9"
-						}
+						//normal: {
+						color: "#f1f1f9"
+						//}
 					},
 					zlevel: -1
 				}

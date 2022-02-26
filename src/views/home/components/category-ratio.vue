@@ -33,7 +33,7 @@ export default defineComponent({
 					radius: ["50%", "60%"],
 					center: ["50%", "40%"],
 					avoidLabelOverlap: false,
-					hoverAnimation: false,
+					scale: true,
 					label: {
 						show: false,
 						position: "center"
@@ -56,10 +56,10 @@ export default defineComponent({
 						{ value: 500, name: "手表" }
 					],
 					itemStyle: {
-						normal: {
-							borderColor: "#fff",
-							borderWidth: 4
-						}
+						//normal: {
+						borderColor: "#fff",
+						borderWidth: 4
+						//}
 					},
 					roundCap: 1
 				}

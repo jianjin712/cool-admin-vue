@@ -87,35 +87,35 @@ export default defineComponent({
 						"1322"
 					],
 					areaStyle: {
-						normal: {
-							color: new echarts.graphic.LinearGradient(
-								0,
-								0,
-								0,
-								1,
-								[
-									{
-										offset: 0,
-										color: "#D1E5FF"
-									},
-									{
-										offset: 1,
-										color: "#FFFFFF"
-									}
-								],
-								false
-							)
-						}
+						//normal: {
+						color: new echarts.graphic.LinearGradient(
+							0,
+							0,
+							0,
+							1,
+							[
+								{
+									offset: 0,
+									color: "#D1E5FF"
+								},
+								{
+									offset: 1,
+									color: "#FFFFFF"
+								}
+							],
+							false
+						)
+						//}
 					},
 					itemStyle: {
-						normal: {
-							color: "#4165d7"
-						}
+						//normal: {
+						color: "#4165d7"
+						//}
 					},
 					lineStyle: {
-						normal: {
-							width: 2
-						}
+						//normal: {
+						width: 2
+						//}
 					}
 				}
 			]
